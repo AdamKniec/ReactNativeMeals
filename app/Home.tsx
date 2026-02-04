@@ -15,7 +15,11 @@ export default function Index() {
         data={SAMPLE_DATA}
         numColumns={2}
         renderItem={(item) => (
-          <MealItemGridType name={item.item.name} id={item.item.id} />
+          <MealItemGridType
+            name={item.item.name}
+            id={item.item.id}
+            category={item.item.category}
+          />
         )}
       />
     </View>
