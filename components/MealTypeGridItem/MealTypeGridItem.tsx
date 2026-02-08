@@ -5,15 +5,15 @@ import Styles from "./MealTypeGridItem.styles";
 interface MealItemGridType {
   name: string;
   id: number;
-  category: string;
+  label: string;
 }
 const MealItemGridType = (props: MealItemGridType) => {
   return (
     <View style={Styles.wrapper}>
       <Link
-        href={{ pathname: "/meal/[meal]", params: { meal: props.category } }}
+        href={{ pathname: "/meal/[meals]", params: { meals: props.label } }}
       >
-        <Text>{props.name}</Text>
+        <Text>{props.label}</Text>
       </Link>
     </View>
   );

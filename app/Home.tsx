@@ -12,7 +12,7 @@ export default function Index() {
           <MealItemGridType
             name={item.item.name}
             id={item.item.id}
-            category={item.item.category}
+            label={item.item.category}
           />
         )}
       />

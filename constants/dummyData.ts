@@ -2,18 +2,24 @@ type Meal = { name: string; id: number; category: string };
 
 export const SAMPLE_DATA: Meal[] = [
   {
-    name: "Italian",
+    name: "Pizza",
     id: 1,
-    category: "a",
+    category: "Italian",
   },
   {
-    name: "French",
+    name: "Pasta",
     id: 2,
-    category: "a",
+    category: "French",
   },
   {
-    name: "German",
+    name: "Beer",
     id: 3,
-    category: "b",
+    category: "German",
+  },
+
+  {
+    name: "Calzone",
+    id: 3,
+    category: "Italian",
   },
 ];

@@ -5,8 +5,7 @@ import { FlatList, View } from "react-native";
 
 const MealScreen = () => {
   const searchParams = useLocalSearchParams();
-  const selectedCategory = searchParams.meal;
-
+  const selectedCategory = searchParams.meals;
   const filteredCategories = SAMPLE_DATA.filter(
     (item) => item.category === selectedCategory
   );
@@ -22,7 +21,7 @@ const MealScreen = () => {
           data={filteredCategories}
           renderItem={(item) => (
             <MealItemGridType
-              category={item.item.category}
+              label={item.item.name}
               name={item.item.name}
               id={item.item.id}
             />
