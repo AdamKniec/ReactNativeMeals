@@ -1,6 +1,7 @@
 import MealItemGridType from "@/components/MealTypeGridItem/MealTypeGridItem";
 import { SAMPLE_DATA } from "@/constants/dummyData";
-import { FlatList, StyleSheet, View } from "react-native";
+import { FlatList, View } from "react-native";
+import { Styles } from "./Styles";
 
 export default function Index() {
   return (
@@ -19,11 +20,3 @@ export default function Index() {
     </View>
   );
 }
-
-const Styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
